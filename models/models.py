@@ -13,3 +13,8 @@ from odoo import models, fields, api
 #     @api.depends('value')
 #     def _value_pc(self):
 #         self.value2 = float(self.value) / 100
+
+class AccountInvoice(models.Model):
+        _name = 'hr.employee'
+        _inherit = 'hr.employee'
+        curriculum =  fields.Binary(string='Inserte Curriculum')
