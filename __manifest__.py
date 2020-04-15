@@ -25,7 +25,7 @@
     # always loaded
     'data': [
         # 'security/ir.mrodel.access.csv',
-        'views/views.xml',
+        'views/Employee_view.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
