@@ -18,3 +18,4 @@ class Employee(models.Model):
         _name = 'hr.employee'
         _inherit = 'hr.employee'
         curriculum =  fields.Binary(string='Inserte Curriculum')
+        num_social = fields.Char(size = 11, string = 'Número de seguro social')
