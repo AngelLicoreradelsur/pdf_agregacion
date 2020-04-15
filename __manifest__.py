@@ -2,29 +2,29 @@
 {
     'name': "pdf_agregacion",
 
-    'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+    'summary': """ Agregacion de un campo al modelo de los empleados
+        """,
 
     'description': """
-        Long description of module's purpose
+        Este modulo nos permitira poder visualizar un campo nuevo donde se almacenara el CV del empleado
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Licorera del sur",
+    'website': "http://www.licoreradelsur.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Generic Modules/Human Resources',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','hr'],
+    'images': ['static/description/logo licorera .png'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        # 'security/ir.mrodel.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],

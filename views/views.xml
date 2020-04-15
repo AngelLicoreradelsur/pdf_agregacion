@@ -25,20 +25,21 @@
     -->
 
     <!-- server action to the one above -->
-    <!--
-    <record model="ir.actions.server" id="pdf_agregacion.action_server">
-      <field name="name">pdf_agregacion server</field>
-      <field name="model_id" ref="model_pdf_agregacion_pdf_agregacion"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": self._name,
-        }
-      </field>
+    
+     <record id="pdf_employee" model="ir.ui.view">
+            <field name="name">hr.employee.pdf</field>
+            <field name="model">hr.employee</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <group  position="inside">
+                    <group col="2">
+                    <field name="curriculum"/>
+                    </group>
+                </group>
+            </field>
     </record>
-    -->
+
 
     <!-- Top menu item -->
     <!--

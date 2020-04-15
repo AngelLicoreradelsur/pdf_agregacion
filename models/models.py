@@ -14,7 +14,7 @@ from odoo import models, fields, api
 #     def _value_pc(self):
 #         self.value2 = float(self.value) / 100
 
-class AccountInvoice(models.Model):
+class Employee(models.Model):
         _name = 'hr.employee'
         _inherit = 'hr.employee'
         curriculum =  fields.Binary(string='Inserte Curriculum')
